@@ -16,6 +16,8 @@ $$
 
 # 处理数据
 
+数据来源：https://www.opt.math.tugraz.at/qaplib/inst.html
+
 先执行 `python dataprocess.py` 即可删除 `data` 文件夹下和 `sol` 文件夹下不同的文件。
 
 执行后删除文件如下（注意由于是在 windows 下操作，所以有反斜线）：
