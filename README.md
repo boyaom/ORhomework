@@ -1,3 +1,19 @@
+# 问题
+
+已知有 $n$ 个位置和 $n$ 家工厂，各个位置之间的距离矩阵设为 $D=(d_{ij})_{n*n}$，各工厂之间的运输量矩阵为 $W = (w_{ij})_{n*n}$。现在要将 $n$ 家工厂建造在这 $n$ 个位置上，使得总费用最小。
+
+设 $d_{ij}$ 表示位置 $i$ 和位置 $j$ 之间的距离，$f_{ij}$ 表示f位置 $i$ 和位置 $j$ 之间的费用。故工厂 $i$ 建造在位置 $k$ 且工厂 $j$ 建造在位置 $l$ 所导致的费用为 $d_{kl}w_{ij}$.
+
+请求出一种分配方式，使得 $\sum d_{kl}w_{ij}$ 最小。
+
+## 正式定义
+
+给定两个集合，P("facilities") 和 L("locations")，它们有相等的大小，共同有一个权重函数 $w: P \times P \rightarrow R$ 和一个距离函数 $d: L \times L \rightarrow R$。找出一个双射 $f: P \rightarrow L("assignment")$ 使得费用函数：
+$$
+\sum_{a,b \in P} w(a,b) \cdot d(f(a), f(b))
+$$
+最小。
+
 # 处理数据
 
 先执行 `python dataprocess.py` 即可删除 `data` 文件夹下和 `sol` 文件夹下不同的文件。
